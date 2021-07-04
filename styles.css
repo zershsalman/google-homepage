@@ -1,55 +1,58 @@
 * {
-    font-family: Roboto;
+    font-family: Arial, sans-serif;
 }
-.nav-bar{
-    font-family: Roboto;
+
+.nav-bar {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     margin-right: 10px;
+    margin-top: 15px;
+    font-size: 13px;
 }
 
 .nav-gmail,
 .nav-images,
-.nav-photo, 
+.nav-photo,
 .nav-apps {
-    margin-left: 15px;
+    margin-left: 20px;
 }
 
-.nav-gmail, 
+.nav-gmail,
 .nav-images {
-    margin-top: 5px;
+    margin-top: 7px;
 }
 
 .nav-apps {
     margin-top: 4px;
+    margin-left: 30px;
 }
 
 .apps-icon:hover {
-    background-color: grey;
-    border-radius: 40px;
+    box-shadow: grey;
 }
 
 .nav-apps-class {
     text-decoration: none;
+    color: grey;
 }
 
 .nav-apps-class:hover {
     cursor: pointer;
 }
 
-#gmail-link, 
+#gmail-link,
 #images-link {
     text-decoration: none;
     color: black;
 }
 
 #gmail-link:hover,
- #images-link:hover {
+#images-link:hover {
     text-decoration: underline;
 }
 
-#zoosh-photo{
+#zoosh-photo {
     width: 30px;
     border-radius: 50%;
 }
@@ -63,29 +66,28 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 90px;
+    margin-top: 15px;
 }
 
 .search-bar {
+    display: flex;
+    position: relative;
+    min-width: 100px;
     order: 2;
     position: absolute;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: #34ac54;
-    height: 30px; 
+    top: 30%;
+    background: white;
+    height: 30px;
+    border: 1px solid grey;
     border-color: grey;
-    border-width: 10px;
+    border-width: 0.4px;
     border-radius: 40px;
     padding: 10px;
     display: flex;
     flex-direction: row-reverse;
 }
 
-.search-bar:hover > .search-txt{
-    width: 450px;
-    padding: 0 6px;
-}
+.search-bar:hover>.search-txt {}
 
 #search-btn {
     color: #fcbc04;
@@ -97,12 +99,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 
 .search-txt {
     border: none;
-    background: none;
+    background: transparent;
+    color: rgba(0, 0, 0, .87);
     outline: none;
     float: left;
     padding: 0;
@@ -110,8 +112,7 @@
     font-size: 16px;
     transition: 0.4s;
     line-height: 40px;
-    width: 0px;
-
+    width: 350px;
 }
 
 .twin-btns {
@@ -127,12 +128,11 @@
     text-decoration: none;
     padding: 10px 10px 10px 10px;
     opacity: 70%;
-   
 }
 
 .btn-twin:hover {
     cursor: pointer;
-} 
+}
 
 .footer {
     position: fixed;
@@ -179,9 +179,7 @@
     opacity: 70%;
 }
 
-.right-foot:hover, .left-foot:hover {
+.right-foot:hover,
+.left-foot:hover {
     cursor: pointer;
 }
- 
-
-
